@@ -3,7 +3,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     lost = 0
-    basic.showString("OK!")
+    basic.showString("OK")
 })
 let lost = 0
 basic.showIcon(IconNames.Heart)
