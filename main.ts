@@ -6,6 +6,7 @@ input.onButtonPressed(Button.B, function () {
     basic.showString("OK")
 })
 let lost = 0
+basic.showIcon(IconNames.SmallHeart)
 basic.showIcon(IconNames.Heart)
 lost = 0
 basic.forever(function () {
@@ -13,8 +14,9 @@ basic.forever(function () {
         lost += 1
         pins.digitalWritePin(DigitalPin.P1, 1)
         pins.digitalWritePin(DigitalPin.P2, 1)
+        basic.pause(500)
     }
-    if (lost == 5) {
+    if (lost == 2) {
         lost = 0
         basic.showLeds(`
             . # . # .
